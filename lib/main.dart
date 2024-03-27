@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:portfolio_management_system/utils/constants.dart';
 import 'package:portfolio_management_system/pages/login_page.dart';
 
 void main() {
@@ -14,8 +13,9 @@ class MyApp extends StatelessWidget {
       title: 'Portfolio Management System',
       debugShowCheckedModeBanner: false,
       home:
+          // AdminPage(title: "Hoşgeldiniz")
 
-      // LoginPage(title: 'Portfolio Management System - Login'),
+          LoginPage(title: 'Portfolio Management System - Login'),
     );
   }
 }

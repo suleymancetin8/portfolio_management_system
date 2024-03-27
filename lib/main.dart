@@ -68,30 +68,33 @@ class _MyHomePageState extends State<MyHomePage> {
                 0,
               ),
               child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text("LOGIN", style: TextStyle(fontSize: 32)),
-                    SizedBox(height: screenHeight(context) * 0.03),
-                    TextField(
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.person),
-                        hintText: "Username",
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("LOGIN", style: TextStyle(fontSize: 32)),
+                  SizedBox(height: screenHeight(context) * 0.03),
+                  TextField(
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.person),
+                      hintText: "Username",
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
                       ),
                     ),
-                    SizedBox(height: screenHeight(context) * 0.025),
-                    TextField(
-                      decoration: InputDecoration(
-                        icon: Icon(Icons.lock),
-                        hintText: "Password",
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
+                  ),
+                  SizedBox(height: screenHeight(context) * 0.025),
+                  TextField(
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      icon: Icon(Icons.lock),
+                      hintText: "Password",
+                      // how can i make the textfield password type?
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
                       ),
                     ),
-                  ]),
+                  ),
+                ],
+              ),
             )
           ],
         ));
